@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is the start of the new Bartender app! Please stay tuned. 
         </p>
         <a
           className="App-link"
