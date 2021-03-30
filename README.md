@@ -9,4 +9,5 @@ Step 3 - Set up a filter function that allows users to select from a drop down m
     - Drop down menus will provide a minimum of three ingredients to narrow down with. 
 Step 4 - Create a backend to store user recipes. 
     - Backend will alow the addition of recipes through the frontend interface 
-
+Step 5 - Test adding recipes to the database. 
+    - Use this to increase the ammount of recipes that are stored in the database.
