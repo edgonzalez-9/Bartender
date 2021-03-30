@@ -6,5 +6,6 @@ Step 1 - Create dummy data for drink recipes.
 Step 2 - Set up a visual layout of how you want the recipes to be displayed
     - Use semantic or another UI library for this, we want something to show for the moment. 
 Step 3 - Set up a filter function that allows users to select from a drop down menu to narrow down options
+    - Drop down menus will provide a minimum of three ingredients to narrow down with. 
 Step 4 - Create a backend to store user recipes. 
 
