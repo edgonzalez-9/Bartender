@@ -8,4 +8,5 @@ Step 2 - Set up a visual layout of how you want the recipes to be displayed
 Step 3 - Set up a filter function that allows users to select from a drop down menu to narrow down options
     - Drop down menus will provide a minimum of three ingredients to narrow down with. 
 Step 4 - Create a backend to store user recipes. 
+    - Backend will alow the addition of recipes through the frontend interface 
 
