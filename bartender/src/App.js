@@ -16,10 +16,10 @@ function App() {
               {recipe.name}
             </p>
             <p>
-              {recipe.ingredients}
+              Ingredients - {recipe.ingredients}
             </p>
             <p>
-              {recipe.recipe}
+              Instructions - {recipe.instructions}
             </p>
           </div>
           )}
