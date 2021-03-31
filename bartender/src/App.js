@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Missing Ingredient</h1>
         {recipes.map(recipe => 
           <div>
             <img src={recipe.image} className="App-logo" alt="logo" />
