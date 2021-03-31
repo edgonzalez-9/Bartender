@@ -8,15 +8,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={recipe.image[0]} className="App-logo" alt="logo" />
+        <img src={recipe[0].image} className="App-logo" alt="logo" />
         <p>
-          {recipe.name[0]}
+          {recipe[0].name}
         </p>
         <p>
-          {recipe.ingredients[0]}
+          {recipe[0].ingredients}
         </p>
         <p>
-          {recipe.recipe[0]}
+          {recipe[0].recipe}
         </p>
         {/* <a
           className="App-link"
