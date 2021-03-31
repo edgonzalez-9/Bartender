@@ -3,13 +3,15 @@ import './App.css';
 import recipes from './Data.js'
 
 import 'semantic-ui-css/semantic.min.css'
+import DrinksContainer from './Containers/DrinksContainer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Missing Ingredient</h1>
-        {recipes.map(recipe => 
+        <DrinksContainer recipes={recipes}/>
+        {/* {recipes.map(recipe => 
           <div>
             <img src={recipe.image} className="App-logo" alt="logo" />
             <p>
@@ -22,15 +24,7 @@ function App() {
               Instructions - {recipe.instructions}
             </p>
           </div>
-          )}
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+          )} */}
       </header>
     </div>
   );
