@@ -11,7 +11,7 @@ let data = [
         name: 'Rum and Coke',
         ingredients: 'Coca-Cola, White Rum, lime juice', 
         recipe: 'Fill glass with ice. Add rum and coke and stir to combine. Garnish with lime.',
-        image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190904-rum-and-coke-0345-landscape-pf-1568846706.jpg?crop=0.621xw:0.931xh;0.160xw,0&resize=980:*'
+        image: 'https://www.acouplecooks.com/wp-content/uploads/2020/11/Rum-and-Coke-005.jpg'
     },
     {
         name: '',
