@@ -14,19 +14,26 @@ class App extends React.Component{
     }
   }
 
-
+  showDrinks = () => {
+    this.setState({
+      showTitle: !this.state.showTitle
+    })
+  }
 
   render(){
     return(
       <div className="App">
         <header className="App-header">
-          {this.showTitle ? 
+          {this.state.showTitle ? 
           <h1>
             Project Drinks Working Title
           </h1>
           : 
           <DrinksContainer recipes={recipes}/>
           }
+          <button onClick={() => this.showDrinks()}> 
+            Click Here to Get Started 
+          </button>
         </header>
       </div>
     )
