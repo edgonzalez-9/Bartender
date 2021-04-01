@@ -16,3 +16,5 @@ Step 5 - Test adding recipes to the database.
 USER EXPERIENCE
 
 When first opened, the user will see the website title and 'Click Here to Start' button. There the user will see a series of drop down menu selctions that narrow down what drinks can be made with on hand inventory. Once the drinks available are shown the user will be able to click on a drink to see a detailed instruction sheet. This page will also have a button that allows user to start the process from the beginning without having to reset the page. At all times there will be a contact button at the bottom of the page that can be used to send an email with recipe suggestions. 
+
+Go throught Krivik's suggestions on react add ons that we can use. Read documentation and understand where to implement them. 
