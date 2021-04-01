@@ -20,8 +20,13 @@ class App extends React.Component{
     return(
       <div className="App">
         <header className="App-header">
-          <h1>Missing Ingredient</h1>
+          {this.showTitle ? 
+          <h1>
+            Project Drinks Working Title
+          </h1>
+          : 
           <DrinksContainer recipes={recipes}/>
+          }
         </header>
       </div>
     )
