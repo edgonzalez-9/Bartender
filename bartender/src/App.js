@@ -9,11 +9,12 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state ={
-
+      showTitle: true,
+      showButton: false
     }
   }
 
-  
+
 
   render(){
     return(
