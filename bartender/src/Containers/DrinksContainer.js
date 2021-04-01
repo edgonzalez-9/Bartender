@@ -9,12 +9,4 @@ function DrinksContainer(props){
     )
 }
 
-// const DrinksContainer = props => {
-//     return(
-//         <div>
-//             {props.recipes.map(recipe => <DrinkCard recipe={recipe}/>)}
-//         </div>
-//     )
-// }
-
 export default DrinksContainer;
