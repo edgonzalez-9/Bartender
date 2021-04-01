@@ -1,11 +1,20 @@
 import React from 'react';
+import DrinkCard from '../Components/DrinkCard';
 
-class DrinksContainer extends React.Component {
-    render(){
+function DrinksContainer(props){
+    return(
         <div>
-            
+            {props.recipes.map(recipe => <DrinkCard recipe={recipe}/>)}
         </div>
-    }
+    )
 }
+
+// const DrinksContainer = props => {
+//     return(
+//         <div>
+//             {props.recipes.map(recipe => <DrinkCard recipe={recipe}/>)}
+//         </div>
+//     )
+// }
 
 export default DrinksContainer;
