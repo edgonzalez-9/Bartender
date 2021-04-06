@@ -3,6 +3,7 @@ import recipes from './Data.js'
 
 import 'semantic-ui-css/semantic.min.css'
 import DrinksContainer from './Containers/DrinksContainer';
+import SearchBar from './Containers/SearchBar'
 import React from 'react';
 
 class App extends React.Component{
@@ -29,7 +30,10 @@ class App extends React.Component{
             Project Drinks Working Title
           </h1>
           : 
-          <DrinksContainer recipes={recipes}/>
+          <div>
+            <SearchBar />
+            <DrinksContainer recipes={recipes}/>
+          </div>
           }
           <button onClick={() => this.showDrinks()}> 
             Click Here to Get Started 
