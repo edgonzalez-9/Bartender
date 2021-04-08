@@ -22,3 +22,16 @@ Go throught Krivik's suggestions on react add ons that we can use. Read document
 We now have implemented a dropdown search menu with options that I selected. Next we need to use the selected option to sort through the drinks based on what option is picked. this will require us to understand how to use the select component and how to get it to pass back up the selected option to the app. Then this will be used to reduce the drinks that are shown. 
 
 Will write a thorough flowchart to know what needs to be implemented tomorrow. 
+
+FLOWCHART OF USER EXPERIENCE AND APP FUNCTIONS
+
+1 - User loads page that has title and start options. DONE
+
+2 - User see the dropdown menu that allows them to select drink ingredients. 
+    - There is currently a dropdown menu with options but it doesn't do anything. It needs to be connected to a function that takes the input and selects ingredients based on that. 
+
+3 - Once the user has selected an ingredient recipes will show up that contain the ingredients selected. 
+
+4 - The user can click on a particular recipe to see ingredients and instructions. 
+
+5 - ???
