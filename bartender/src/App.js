@@ -21,6 +21,11 @@ class App extends React.Component{
     })
   }
 
+  selectDrink = () => {
+    selectedDrinks = []
+    
+  }
+
   render(){
     return(
       <div className="App">
