@@ -20,3 +20,5 @@ When first opened, the user will see the website title and 'Click Here to Start'
 Go throught Krivik's suggestions on react add ons that we can use. Read documentation and understand where to implement them. 
 
 We now have implemented a dropdown search menu with options that I selected. Next we need to use the selected option to sort through the drinks based on what option is picked. this will require us to understand how to use the select component and how to get it to pass back up the selected option to the app. Then this will be used to reduce the drinks that are shown. 
+
+Will write a thorough flowchart to know what needs to be implemented tomorrow. 
