@@ -10,7 +10,7 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state ={
-      showTitle: true,
+      showTitle: false,
       showButton: false,
       ingredientProvided: false,
       selectedDrinks: null
@@ -23,6 +23,10 @@ class App extends React.Component{
     })
   }
 
+  handleChange(e){
+    console.log(e.value)
+  }
+
   render(){
     return(
       <div className="App">
@@ -33,7 +37,7 @@ class App extends React.Component{
           </h1>
           : 
           <div>
-            <SearchBar />
+            <SearchBar handleChange={this.handleChange}/>
             <DrinksContainer recipes={recipes}/>
           </div>
           }

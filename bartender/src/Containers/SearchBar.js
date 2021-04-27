@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Select from 'react-select'
 
 const options = [
@@ -10,8 +10,10 @@ const options = [
     {value: 'Peach Schnapps', label: 'Peach Schanpps'}
 ]
 
-const myComponent = () => (
-    <Select options ={options}/>
-)
+function myComponent(props) {
+    return(
+        <Select options={options} onChange={(e) => props.handleChange(e)}/>
+    )
+}
 
 export default myComponent;
