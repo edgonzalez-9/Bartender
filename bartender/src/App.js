@@ -13,7 +13,7 @@ class App extends React.Component{
       showTitle: false,
       showButton: false,
       ingredientProvided: false,
-      selectedDrinks: null
+      selectedDrinks: []
     }
   }
 
@@ -23,8 +23,11 @@ class App extends React.Component{
     })
   }
 
-  handleChange(e){
-    console.log(e.value)
+  handleChange = (e) => {
+    let drinks = recipes.filter(recipe => recipe.liquor.includes(e.value))
+    this.setState({
+      selectedDrinks: drinks
+    })
   }
 
   render(){
@@ -38,7 +41,7 @@ class App extends React.Component{
           : 
           <div>
             <SearchBar handleChange={this.handleChange}/>
-            <DrinksContainer recipes={recipes}/>
+            <DrinksContainer recipes={this.state.selectedDrinks}/>
           </div>
           }
           <button onClick={() => this.showDrinks()}> 
