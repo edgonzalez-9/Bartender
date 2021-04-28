@@ -10,7 +10,7 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state ={
-      showTitle: false,
+      showTitle: true,
       showButton: false,
       ingredientProvided: false,
       selectedDrinks: []
@@ -19,7 +19,8 @@ class App extends React.Component{
 
   showDrinks = () => {
     this.setState({
-      showTitle: !this.state.showTitle
+      showTitle: !this.state.showTitle,
+      selectedDrinks: []
     })
   }
 
