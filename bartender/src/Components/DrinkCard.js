@@ -1,18 +1,17 @@
 import React from 'react';
 
 const DrinkCard = props => {
+
+    // let recipe = props.recipe
+
     return(
-        <div>
-            <img src={props.recipe.image} className="App-logo" alt="logo" />
-            <p>
-                {props.recipe.name}
-            </p>
-            <p>
-                Ingredients - {props.recipe.ingredients}
-            </p>
-            <p>
-                Instructions - {props.recipe.instructions}
-            </p>
+        <div class="card; w-25">
+            <img src={props.recipe.image} class="card-img-top" alt="..." />
+            <div class="card-body">
+                <h3 class="card-title"> {props.recipe.name}</h3>
+                <p class="card-text"> {props.recipe.ingredients}</p>
+                <p class="card-text"> {props.recipe.instructions}</p>
+            </div>
         </div>
     )
 }

@@ -14,7 +14,8 @@ class App extends React.Component{
       showButton: false,
       ingredientProvided: false,
       selectedDrinks: [],
-      anotherRound: false
+      anotherRound: false,
+      drinkSelected: false
     }
   }
 
@@ -27,7 +28,8 @@ class App extends React.Component{
   startAgain = () => {
     this.setState({
       selectedDrinks: [],
-      anotherRound: !this.state.anotherRound
+      anotherRound: !this.state.anotherRound,
+      // drinkSelected: !this.state.drinkSelected
     })
   }
 
@@ -35,7 +37,8 @@ class App extends React.Component{
     let drinks = recipes.filter(recipe => recipe.liquor.includes(e.value))
     this.setState({
       selectedDrinks: drinks,
-      anotherRound: !this.state.anotherRound
+      anotherRound: !this.state.anotherRound,
+      // drinkSelected: !this.state.drinkSelected
     })
   }
 
@@ -53,7 +56,11 @@ class App extends React.Component{
           : 
           <div class="container-fluid">
             <h1>Project Drinks Working Title</h1>
+            {this.state.drinkSelected ?
+            <div></div>
+            :
             <SearchBar handleChange={this.handleChange}/>
+            }
             <DrinksContainer recipes={this.state.selectedDrinks}/>
             {this.state.anotherRound ?
               <button onClick={() => this.startAgain()}>
@@ -61,7 +68,7 @@ class App extends React.Component{
               </button>
               :
               <div>
-                
+
               </div>
             }
           </div>

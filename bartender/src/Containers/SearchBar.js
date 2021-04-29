@@ -13,7 +13,10 @@ const options = [
 
 function myComponent(props) {
     return(
-        <Select options={options} onChange={(e) => props.handleChange(e)}/>
+        <Select
+            options={options} 
+            onChange={(e) => props.handleChange(e)}
+        />
     )
 }
 
