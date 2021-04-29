@@ -35,16 +35,21 @@ class App extends React.Component{
     return(
       <div className="App">
         <header className="App-header">
-          {this.state.showTitle ? 
+          {/* {this.state.showTitle ? 
           <h1>
             Project Drinks Working Title
           </h1>
           : 
-          <div>
+          <div class="container-fluid">
             <SearchBar handleChange={this.handleChange}/>
             <DrinksContainer recipes={this.state.selectedDrinks}/>
           </div>
-          }
+          } */}
+          <h1>Project Drinks Working Title</h1>
+          <div class="container">
+          <SearchBar handleChange={this.handleChange}/>
+          <DrinksContainer recipes={this.state.selectedDrinks}/>
+          </div>
           <button onClick={() => this.showDrinks()}> 
             Click Here to Get Started 
           </button>
