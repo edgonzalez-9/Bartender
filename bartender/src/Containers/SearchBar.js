@@ -11,11 +11,9 @@ const options = [
     {value: 'Creme de Cassis', label: 'Creme de Cassis'}
 ]
 
-let sortedOptions = options.sort((a,b) => a.value - b.value)
-
 function myComponent(props) {
     return(
-        <Select options={sortedOptions} onChange={(e) => props.handleChange(e)}/>
+        <Select options={options} onChange={(e) => props.handleChange(e)}/>
     )
 }
 
