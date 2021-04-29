@@ -29,7 +29,7 @@ class App extends React.Component{
     this.setState({
       selectedDrinks: [],
       anotherRound: !this.state.anotherRound,
-      // drinkSelected: !this.state.drinkSelected
+      drinkSelected: !this.state.drinkSelected
     })
   }
 
@@ -38,7 +38,7 @@ class App extends React.Component{
     this.setState({
       selectedDrinks: drinks,
       anotherRound: !this.state.anotherRound,
-      // drinkSelected: !this.state.drinkSelected
+      drinkSelected: !this.state.drinkSelected
     })
   }
 
