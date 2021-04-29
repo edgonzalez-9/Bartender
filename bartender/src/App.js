@@ -46,16 +46,13 @@ class App extends React.Component{
     return(
       <div className="App">
         <header className="App-header">
+        <h1>Project Drinks Working Title</h1>
           {this.state.showTitle ? 
           <div class="container-fluid">
-            <h1>Project Drinks Working Title</h1>
-            <button onClick={() => this.showDrinks()}> 
-              Click Here to Get Started 
-            </button>
+            <button type="button" class="btn btn-outline-primary" onClick={() => this.showDrinks()}> Click Here to Get Started </button>
           </div>
           : 
           <div class="container-fluid">
-            <h1>Project Drinks Working Title</h1>
             {this.state.drinkSelected ?
             <div></div>
             :
@@ -63,13 +60,9 @@ class App extends React.Component{
             }
             <DrinksContainer recipes={this.state.selectedDrinks}/>
             {this.state.anotherRound ?
-              <button onClick={() => this.startAgain()}>
-                Another Round!
-              </button>
+              <button type="button" class="btn btn-outline-primary" onClick={() => this.startAgain()}> Another Round! </button>
               :
-              <div>
-
-              </div>
+              <div></div>
             }
           </div>
           }
