@@ -19,7 +19,12 @@ class App extends React.Component{
 
   showDrinks = () => {
     this.setState({
-      showTitle: !this.state.showTitle,
+      showTitle: !this.state.showTitle
+    })
+  }
+
+  startAgain = () => {
+    this.setState({
       selectedDrinks: []
     })
   }
@@ -35,24 +40,22 @@ class App extends React.Component{
     return(
       <div className="App">
         <header className="App-header">
-          {/* {this.state.showTitle ? 
-          <h1>
-            Project Drinks Working Title
-          </h1>
+          {this.state.showTitle ? 
+          <div class="container-fluid">
+            <h1>Project Drinks Working Title</h1>
+            <button onClick={() => this.showDrinks()}> 
+              Click Here to Get Started 
+            </button>
+          </div>
           : 
           <div class="container-fluid">
             <SearchBar handleChange={this.handleChange}/>
             <DrinksContainer recipes={this.state.selectedDrinks}/>
+            <button onClick={() => this.startAgain()}>
+              Another Round!
+            </button>
           </div>
-          } */}
-          <h1>Project Drinks Working Title</h1>
-          <div class="container">
-          <SearchBar handleChange={this.handleChange}/>
-          <DrinksContainer recipes={this.state.selectedDrinks}/>
-          </div>
-          <button onClick={() => this.showDrinks()}> 
-            Click Here to Get Started 
-          </button>
+          }
         </header>
       </div>
     )
