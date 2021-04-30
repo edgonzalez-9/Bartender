@@ -5,7 +5,7 @@ const DrinkCard = props => {
     // let recipe = props.recipe
 
     return(
-        <div class="card; w-25">
+        <div class="card border-light mb-3; w-25" >
             <img src={props.recipe.image} class="card-img-top" alt="..." />
             <div class="card-body">
                 <h3 class="card-title"> {props.recipe.name}</h3>
