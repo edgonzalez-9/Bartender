@@ -15,7 +15,7 @@ class App extends React.Component{
       ingredientProvided: false,
       selectedDrinks: [],
       anotherRound: false,
-      drinkSelected: false
+      drinkSelected: false,
     }
   }
 

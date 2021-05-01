@@ -13,10 +13,13 @@ const options = [
 
 function myComponent(props) {
     return(
-        <Select
-            options={options} 
-            onChange={(e) => props.handleChange(e)}
-        />
+        <div>
+            <h3> Select Your Liquor </h3>
+            <Select
+                options={options} 
+                onChange={(e) => props.handleChange(e)}
+            />
+        </div>
     )
 }
 
