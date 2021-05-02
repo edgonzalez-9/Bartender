@@ -1,16 +1,17 @@
 import React from 'react';
+import CardFront from './CardFront';
 
 class DrinkCard extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            flipCard: true
+            cardFront: true
         }
     }
 
     handleFlip = () => {
         this.setState({
-            flipCard: !this.state.flipCard
+            cardFront: !this.state.cardFront
         })
     }
 
@@ -28,16 +29,12 @@ class DrinkCard extends React.Component{
     // }
 
     render(){
+        let recipe = this.props.recipe
+
         return(
             <div class="card border-light mb-3; w-25" >
-                {this.state.flipCard ?
-                <div>
-                    <img src={this.props.recipe.image} class="card-img-top" alt="..." />
-                    <div class="card-body">
-                        <h3 class="card-title"> {this.props.recipe.name}</h3>
-                    </div>
-                    <button type="button" class="btn btn-primary" onClick={() => this.handleFlip()}>See Ingredients</button>
-                </div>
+                {this.state.cardFront ?
+                <CardFront recipe={recipe} handleFlip={this.handleFlip()} />
                 :
                 <div>
                     <div class="card-body">
