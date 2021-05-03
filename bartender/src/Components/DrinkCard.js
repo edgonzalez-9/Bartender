@@ -1,4 +1,5 @@
 import React from 'react';
+import CardBack from './CardBack';
 import CardFront from './CardFront';
 
 class DrinkCard extends React.Component{
@@ -32,16 +33,13 @@ class DrinkCard extends React.Component{
         let recipe = this.props.recipe
 
         return(
-            <div class="card border-light mb-3; w-25" >
-                {this.state.cardFront ?
-                <CardFront recipe={recipe} handleFlip={this.handleFlip()} />
+            <div class="card border-light mb-3; w-25">
+                {this.state.cardFront ? 
+                    <CardFront recipe={recipe} handleFlip={() => this.handleFlip()}/>
                 :
                 <div>
-                    <div class="card-body">
-                        <p class="card-text"> {this.props.recipe.ingredients}</p>
-                        <p class="card-text"> {this.props.recipe.instructions}</p>
-                    </div>
-                    <button type="button" class="btn btn-primary" onClick={() => this.handleFlip()}>See Picture</button>
+                    <CardFront recipe={recipe} handleFlip={() => this.handleFlip()}/>
+                    <CardBack recipe={recipe} handleFlip={() => this.handleFlip()}/>
                 </div>
                 }
             </div>
