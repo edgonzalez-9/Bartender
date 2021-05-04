@@ -41,14 +41,20 @@ class DrinkCard extends React.Component{
                         <button type="button" class="btn btn-primary" onClick={() => this.handleClick()}>Show Recipe</button>
                     </div>
                 :
-                    <div class="card border-light mb-3; w-25">
-                        <img src={recipe.image} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h3 class="card-title">{recipe.name}</h3>
-                            <p class="card-text">{recipe.ingredients}</p>
-                            <p class="card-text">{recipe.instructions}</p>
+                    <div class="drink-container">
+                        <div class="card border-light mb-3; w-25">
+                            <img src={recipe.image} class="card-img-top" alt ="..."/>
+                            <div class="card-body">
+                                <h3 class="card-title">{recipe.name}</h3>
+                            </div>
                         </div>
-                        <button type="button" class="btn btn-primary" onClick={() => this.handleClick()}>Hide Recipe</button>
+                        <div class="card border-light mb-3; w-25">
+                            <div class="card-body">
+                                <p class="card-text">{recipe.ingredients}</p>
+                                <p class="card-text">{recipe.instructions}</p>
+                            </div>
+                            <button type="button" class="btn btn-primary" onClick={() => this.handleClick()}>Hide Recipe</button>
+                        </div>
                     </div>
                 }
             </div>
