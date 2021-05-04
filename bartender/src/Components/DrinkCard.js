@@ -1,6 +1,4 @@
 import React from 'react';
-import CardBack from './CardBack';
-import CardFront from './CardFront';
 
 class DrinkCard extends React.Component{
     constructor(props){
@@ -10,7 +8,7 @@ class DrinkCard extends React.Component{
         }
     }
 
-    handleFlip = () => {
+    handleClick = () => {
         this.setState({
             cardFront: !this.state.cardFront
         })
@@ -33,14 +31,25 @@ class DrinkCard extends React.Component{
         let recipe = this.props.recipe
 
         return(
-            <div class="card border-light mb-3; w-25">
+            <div>
                 {this.state.cardFront ? 
-                    <CardFront recipe={recipe} handleFlip={() => this.handleFlip()}/>
+                    <div class="card border-light mb-3; w-25">
+                        <img src={recipe.image} class="card-img-top" alt="..."/>
+                        <div class="card-body">
+                            <h3 class="card-title">{recipe.name}</h3>
+                        </div>
+                        <button type="button" class="btn btn-primary" onClick={() => this.handleClick()}>Show Recipe</button>
+                    </div>
                 :
-                <div>
-                    <CardFront recipe={recipe} handleFlip={() => this.handleFlip()}/>
-                    <CardBack recipe={recipe} handleFlip={() => this.handleFlip()}/>
-                </div>
+                    <div class="card border-light mb-3; w-25">
+                        <img src={recipe.image} class="card-img-top" alt="..."/>
+                        <div class="card-body">
+                            <h3 class="card-title">{recipe.name}</h3>
+                            <p class="card-text">{recipe.ingredients}</p>
+                            <p class="card-text">{recipe.instructions}</p>
+                        </div>
+                        <button type="button" class="btn btn-primary" onClick={() => this.handleClick()}>Hide Recipe</button>
+                    </div>
                 }
             </div>
         )

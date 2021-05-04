@@ -42,4 +42,5 @@
   padding-bottom: 25px;
   display: flex;
   justify-content: space-evenly;
+  flex-grow: 4;
 }

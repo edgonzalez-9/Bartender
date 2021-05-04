@@ -17,7 +17,7 @@ let data = [
     },
     {
         name: 'Gin and Tonic',
-        liquor: 'Gin',
+        liquor: 'Gin, Rum',
         ingredients: 'Gin, tonic water, ', 
         instructions: 'Fill a highball glass with ice and then add gin. Top with tonic water and stir gently.',
         image: 'https://cdn.diffords.com/contrib/stock-images/2016/8/07/201642335eb2fd8d5d9dc53a1fccb8dd1015.jpg'

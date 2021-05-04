@@ -3,7 +3,7 @@ import React from 'react';
 function CardFront(props) {
     let recipe = props.recipe
     return(
-        <div>
+        <div class="card border-light mb-3; w-25">
             <img src={recipe.image} class="card-img-top" alt=""/>
             <div class="card-body">
                 <h3 class="card-title"> {recipe.name} </h3>
