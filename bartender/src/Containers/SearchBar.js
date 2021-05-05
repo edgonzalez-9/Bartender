@@ -8,7 +8,7 @@ const options = [
     {value: 'Crown Royal', label: 'Crown Royal'},
     {value: 'Bourbon', label: 'Bourbon'},
     {value: 'Peach Schnapps', label: 'Peach Schanpps'},
-    {value: 'Creme de Cassis', label: 'Creme de Cassis'}
+    {value: 'Crème de Cassis', label: 'Crème de Cassis'}
 ]
 
 function myComponent(props) {
