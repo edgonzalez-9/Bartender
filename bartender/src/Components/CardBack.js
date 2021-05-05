@@ -4,7 +4,7 @@ function CardBack(props) {
     let recipe = props.recipe
 
     return(
-        <div class="card mb-3" style={{width: `600px`, height: `500px`}}>
+        <div class="card mb-3" style={{width: `600px`, height: `flex`}}>
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src={recipe.image} alt="..." style={{maxWidth: `200px`}}/>
@@ -21,8 +21,8 @@ function CardBack(props) {
                             {recipe.instructions.map(instruction => <li class="drink-list">{instruction}</li>)}
                         </ul>
                     </div>
-                    <button type="button" class="btn btn-primary" onClick={() => props.handleClick()}>Hide Recipe</button>
                 </div>
+                <button type="button" class="btn btn-primary" onClick={() => props.handleClick()}>Hide Recipe</button>
             </div>
         </div>
     )
