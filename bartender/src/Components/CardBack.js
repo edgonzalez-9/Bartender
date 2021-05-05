@@ -8,10 +8,10 @@ function CardBack(props) {
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src={recipe.image} alt="..." style={{maxWidth: `200px`}}/>
+                    <h5 class="card-title">{recipe.name}</h5>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">{recipe.name}</h5>
                         <p class="card-text">{recipe.ingredients}</p>
                         <p class="card-text">{recipe.instructions}</p>
                     </div>
