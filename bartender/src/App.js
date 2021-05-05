@@ -16,12 +16,28 @@ class App extends React.Component{
       selectedDrinks: [],
       anotherRound: false,
       drinkSelected: false,
+      currentLiquor: '',
+      showAll: false
     }
   }
 
-  showDrinks = () => {
+  showSearchBar = () => {
     this.setState({
       showTitle: !this.state.showTitle
+    })
+  }
+
+  showAll = () => {
+    this.setState({
+      selectedDrinks: recipes,
+      showAll: !this.state.showAll
+    })
+  }
+
+  hideAll = () => {
+    this.setState({
+      selectedDrinks: [],
+      showAll: !this.state.showAll
     })
   }
 
@@ -38,7 +54,8 @@ class App extends React.Component{
     this.setState({
       selectedDrinks: drinks,
       anotherRound: !this.state.anotherRound,
-      drinkSelected: !this.state.drinkSelected
+      drinkSelected: !this.state.drinkSelected,
+      currentLiquor: e.label
     })
   }
 
@@ -49,14 +66,27 @@ class App extends React.Component{
         <h1>Project Drinks Working Title</h1>
           {this.state.showTitle ? 
           <div class="container-fluid">
-            <button type="button" class="btn btn-outline-primary" onClick={() => this.showDrinks()}> Click Here to Get Started </button>
+            <button type="button" class="btn btn-outline-primary" onClick={() => this.showSearchBar()}> Click Here to Get Started </button>
           </div>
           : 
           <div class="container-fluid">
             {this.state.drinkSelected ?
-            <div></div>
+              <div>
+                <h2>{this.state.currentLiquor}</h2>
+              </div>
             :
-            <SearchBar handleChange={this.handleChange} recipes={recipes}/>
+              <div>
+                <SearchBar handleChange={this.handleChange} showAll={this.showAll}recipes={recipes}/>
+                {this.state.showAll ?
+                  <div style={{paddingTop: `10px`}}>
+                    <button type="button" class="btn btn-outline-primary" onClick={() => this.hideAll()} > Hide All </button>
+                  </div>
+                :
+                  <div style={{paddingTop: `10px`}}>
+                    <button type="button" class="btn btn-outline-primary" onClick={() => this.showAll()} > Show All </button>
+                  </div>
+                }
+              </div>
             }
             <DrinksContainer recipes={this.state.selectedDrinks}/>
             {this.state.anotherRound ?

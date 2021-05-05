@@ -3,8 +3,7 @@ import Select from 'react-select'
 
 function myComponent(props) {
 
-    // let recipes = props.recipes
-
+    
     const options = [
         {label: 'Tequila'},
         {label: 'Rum'},
@@ -14,10 +13,10 @@ function myComponent(props) {
         {label: 'Peach Schnapps'},
         {label: 'Crème de Cassis'}
     ]
-
+    
+    // let recipes = props.recipes
     // let options = [];
-
-    // options = recipes.ingredients.map(ingredient => label: ingredient)
+    // options = recipes.ingredients.map(ingredient => {{label: ingredient}})
 
     return(
         <div>

@@ -16,19 +16,6 @@ class DrinkCard extends React.Component{
         })
     }
 
-    // render(){
-    //     return(
-    //         <div class="card border-light mb-3; w-25" >
-    //             <img src={this.props.recipe.image} class="card-img-top" alt="..." />
-    //             <div class="card-body">
-    //                 <h3 class="card-title"> {this.props.recipe.name}</h3>
-    //                 <p class="card-text"> {this.props.recipe.ingredients}</p>
-    //                 <p class="card-text"> {this.props.recipe.instructions}</p>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-
     render(){
         let recipe = this.props.recipe
 
