@@ -20,7 +20,7 @@ let data = [
         liquor: ['Gin'],
         ingredients: ['2 ounces of gin', '4 ounces of tonic water', 'Garnish with lime wedge'], 
         instructions: ['1 - Pour gin into a glass with ice.', '2 - Top with tonic water.', '3 - Gently stir to combine but not so much that you lose carbonation.', '4 - Garnish with lime wedge.'],
-        image: 'https://cdn.diffords.com/contrib/stock-images/2016/8/07/201642335eb2fd8d5d9dc53a1fccb8dd1015.jpg'
+        image: 'https://www.liquor.com/thmb/V_Uqa_bu4mxNE78kiiB1aWrSexM=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Gin-and-Tonic-720x720-recipe-a87e854d919d4562bc277b4191e477da.jpg'
     },
     {
         name: 'Vegas Bomb',

@@ -20,7 +20,7 @@ class DrinkCard extends React.Component{
         let recipe = this.props.recipe
 
         return(
-            <div>
+            <div class="drink-child">
                 {this.state.cardFront ? 
                     <CardFront recipe={recipe} handleClick={() => this.handleClick()}/>
                 :
