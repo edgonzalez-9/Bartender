@@ -34,7 +34,7 @@ class App extends React.Component{
   }
 
   handleChange = (e) => {
-    let drinks = recipes.filter(recipe => recipe.liquor.includes(e.value))
+    let drinks = recipes.filter(recipe => recipe.liquor.includes(e.label))
     this.setState({
       selectedDrinks: drinks,
       anotherRound: !this.state.anotherRound,
@@ -56,7 +56,7 @@ class App extends React.Component{
             {this.state.drinkSelected ?
             <div></div>
             :
-            <SearchBar handleChange={this.handleChange}/>
+            <SearchBar handleChange={this.handleChange} recipes={recipes}/>
             }
             <DrinksContainer recipes={this.state.selectedDrinks}/>
             {this.state.anotherRound ?

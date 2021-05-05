@@ -1,17 +1,24 @@
 import React from 'react';
 import Select from 'react-select'
 
-const options = [
-    {value: 'Tequila', label: 'Tequila'},
-    {value: 'Rum', label: 'Rum'},
-    {value: 'Gin', label: 'Gin'},
-    {value: 'Crown Royal', label: 'Crown Royal'},
-    {value: 'Bourbon', label: 'Bourbon'},
-    {value: 'Peach Schnapps', label: 'Peach Schanpps'},
-    {value: 'Crème de Cassis', label: 'Crème de Cassis'}
-]
-
 function myComponent(props) {
+
+    let recipes = props.recipes
+
+    const options = [
+        {label: 'Tequila'},
+        {label: 'Rum'},
+        {label: 'Gin'},
+        {label: 'Crown Royal'},
+        {label: 'Bourbon'},
+        {label: 'Peach Schnapps'},
+        {label: 'Crème de Cassis'}
+    ]
+
+    // let options = [];
+
+    // options = recipes.ingredients.map(ingredient => {value: ingredient, label: ingredient})
+
     return(
         <div>
             <h3> Select Your Liquor </h3>
