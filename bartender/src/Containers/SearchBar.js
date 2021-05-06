@@ -22,6 +22,7 @@ function myComponent(props) {
         <div>
             <h3> Select Your Liquor </h3>
             <Select
+                className="text-dark"
                 options={options} 
                 onChange={(e) => props.handleChange(e)}
             />
