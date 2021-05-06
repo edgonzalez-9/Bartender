@@ -7,7 +7,7 @@ function CardFront(props) {
         <div class="card" style={{width: `18rem`, height: `flex`}}>
             <img class="card-img-top" src={recipe.image} alt="..."/>
             <div class="card-body" style={{paddingBottom: `10px`}}>
-                <h3 class="card-title">{recipe.name}</h3>
+                <h4 class="card-title">{recipe.name}</h4>
             </div>
             <button type="button" class="btn btn-primary" onClick={() => props.handleClick()}>Show Recipe</button>
         </div>

@@ -14,11 +14,11 @@ function CardBack(props) {
                     <div class="card-body">
                         <h3 class="card-title">Ingredients</h3>
                         <ul style={{textAlign: `left`}}>
-                            {recipe.ingredients.map(ingredient => <li class="drink-list">{ingredient}</li>)} 
+                            {recipe.ingredients.map(ingredient => <li class="drink-list" style={{fontSize: `medium`}}>{ingredient}</li>)} 
                         </ul> 
                         <h3 class="card-title">Instructions</h3>
                         <ul style={{textAlign: `left`}}>
-                            {recipe.instructions.map(instruction => <li class="drink-list">{instruction}</li>)}
+                            {recipe.instructions.map(instruction => <li class="drink-list" style={{fontSize: `medium`}}>{instruction}</li>)}
                         </ul>
                     </div>
                 </div>
