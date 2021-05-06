@@ -42,6 +42,13 @@ let data = [
         ingredients: ['3 mint leaves', '0.5 ounces of simple syrup', '2 ounces of white rum', '0.75 ounces of lime juice', '4 ounces of club soda', 'Garnish with mint sprig and lime wheel'],
         instructions: ['1 - Lightly muddle the mint with the simple syrup in a shaker.', '2 - Add the rum, lime juice and ice, and give it a brief shake.', '3 - Strain into a glass with fresh ice, top with club soda.', '4 - Garnish with mint sprig and lime wheel.'],
         image: 'https://www.liquor.com/thmb/WxxD8oIVqce14UZIRW4F2-vvhpU=/720x720/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__09__04153106__mojito-720x720-recipe-a55b114fc99c4a64b38c9ef6d1660e20.jpg'
+    },
+    {
+        name: 'Tequila Sunrise',
+        liquor: ['Tequila'],
+        ingredients: ['2 ounces of tequila', '4 ounces of orange juice', '0.25 ounces of grenadine', 'Garnish with orange slice and cherry'],
+        instructions: ['1 - Add tequila and then orange juice to a glass with ice.', '2 - Top with grenadine to create a layered effect.', '3 - Garnish with orange slice and cherry.'],
+        image: 'https://www.liquor.com/thmb/goYBEIJJnyZU5xYYhF3OYRnb5BU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__07__20113334__tequila-sunrise-720x720-article-ea5f456d4fa54cde9bf969429bfc01e8.jpg'
     }
 ]
 
@@ -50,7 +57,7 @@ export default data;
 
 // {
 //     name: '',
-//     liquor: '',
+//     liquor: [],
 //     ingredients: [],
 //     instructions: [],
 //     image: ''
