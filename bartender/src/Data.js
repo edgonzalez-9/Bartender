@@ -58,18 +58,18 @@ let data = [
         image: 'https://www.liquor.com/thmb/ft9li9PoCcGvWtrHHtQmXtuyR98=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__06__06221712__gin-rickey-720x720-recipe-2d83797a7edc4f8ea9455f160e497dc2.jpg'
     },
     {
-        name: '',
-        liquor: [],
-        ingredients: [],
-        instructions: [],
-        image: ''
+        name: 'Apple Cranberry Moscow Mule',
+        liquor: ['Vodka'],
+        ingredients: ['2 ounces of vodka', '1 ounce of cran-apple juice', '0.25 ounces of lime juice', '4 ounces of ginger beer', 'Garnish with cranberries and apple slices'],
+        instructions: ['1 - Pour vodka, cran-apple, and lime juice into a mule mug filled with ice, stir briefly to combine.', '2 - Top with ginger beer.', '3 - Garnsih with cranberries and apple slices.'],
+        image: 'https://www.liquor.com/thmb/-u_cWA5C1CRwC8556NHjd6oNqs4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__11__20081258__apple-cranberry-moscow-mule-720x720-article-726c7cfcde8041d893b26a1461c05fe4.jpg'
     },
     {
-        name: '',
-        liquor: [],
-        ingredients: [],
-        instructions: [],
-        image: ''
+        name: 'Vodka Martini',
+        liquor: ['Vodka'],
+        ingredients: ['2.5 ounces of vodka', '0.5 ounces of dry vermouth', '1 dash of orange bitters', 'Garnish with lemon twist'],
+        instructions: ['1 - Add ingredients into a mixing glass with ice and stir until very well chilled.', '2 - Strain into a chilled cocktail glass.', '3 - Garnish with lemon twist.'],
+        image: 'https://www.liquor.com/thmb/FHXxalvM9Z3vzbm3g48XjILTpNw=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/vodka-martini-720x720-primary-7bf9f33f067c4f81b53d8f1f73bdd4a2.jpg'
     }
 
 ]
