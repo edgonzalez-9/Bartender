@@ -63,7 +63,7 @@ class App extends React.Component{
     return(
       <div className="App">
         <header className="App-header">
-        <h1>Project Drinks Working Title</h1>
+          <h1>Project Drinks Working Title</h1>
           {this.state.showTitle ? 
           <div class="container-fluid">
             <button type="button" class="btn btn-outline-primary" onClick={() => this.showSearchBar()}> Click Here to Get Started </button>
