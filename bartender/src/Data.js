@@ -49,7 +49,29 @@ let data = [
         ingredients: ['2 ounces of tequila', '4 ounces of orange juice', '0.25 ounces of grenadine', 'Garnish with orange slice and cherry'],
         instructions: ['1 - Add tequila and then orange juice to a glass with ice.', '2 - Top with grenadine to create a layered effect.', '3 - Garnish with orange slice and cherry.'],
         image: 'https://www.liquor.com/thmb/goYBEIJJnyZU5xYYhF3OYRnb5BU=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__07__20113334__tequila-sunrise-720x720-article-ea5f456d4fa54cde9bf969429bfc01e8.jpg'
+    },
+    {
+        name: 'Gin Rickey',
+        liquor: ['Gin'],
+        ingredients: ['2 ounces of gin', '0.5 ounces of lime juice', '4 ounces of club soda', 'Garnish with lime wheels'],
+        instructions: ['1 - Fill glass with ice and add gin and lime juice.', '2 - Top with club soda.', '3 - Garnish with lime wheels.'],
+        image: 'https://www.liquor.com/thmb/ft9li9PoCcGvWtrHHtQmXtuyR98=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__06__06221712__gin-rickey-720x720-recipe-2d83797a7edc4f8ea9455f160e497dc2.jpg'
+    },
+    {
+        name: '',
+        liquor: [],
+        ingredients: [],
+        instructions: [],
+        image: ''
+    },
+    {
+        name: '',
+        liquor: [],
+        ingredients: [],
+        instructions: [],
+        image: ''
     }
+
 ]
 
 
