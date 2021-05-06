@@ -11,7 +11,7 @@ function myComponent(props) {
         {label: 'Crown Royal'},
         {label: 'Bourbon'},
         {label: 'Peach Schnapps'},
-        {label: 'Crème de Cassis'}
+        {label: 'Vodka'}
     ]
     
     // let recipes = props.recipes
