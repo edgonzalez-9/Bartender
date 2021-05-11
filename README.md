@@ -13,6 +13,10 @@ Finds drinks that can be made from ingredients on hand.
 
 Step 4 - Create a backend to store user recipes. 
     - Backend will alow the addition of recipes through the frontend interface 
+    -- Not too sure about this part anymore, will rethink the app. 
+    - Changing more things to get a submit in for the day.
+
+
     
 Step 5 - Test adding recipes to the database. 
     - Use this to increase the ammount of recipes that are stored in the database.
@@ -40,3 +44,6 @@ FLOWCHART OF USER EXPERIENCE AND APP FUNCTIONS
 4 - The user can click on a particular recipe to see ingredients and instructions. 
 
 5 - ???
+
+Need to reasses scope of the project and figure out what to finsih to add to resume.
+Trying to fix the issues when commiting changes to the README.
