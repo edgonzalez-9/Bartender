@@ -66,7 +66,7 @@ class App extends React.Component{
           <h1>Project Drinks Working Title</h1>
           {this.state.showTitle ? 
           <div class="container-fluid">
-            <button type="button" class="btn btn-outline-primary" onClick={() => this.showSearchBar()}> Click Here to Get Started </button>
+            <button type="button" class="btn btn-dark" onClick={() => this.showSearchBar()}> Click Here to Get Started </button>
           </div>
           : 
           <div class="container-fluid">
@@ -79,18 +79,18 @@ class App extends React.Component{
                 <SearchBar handleChange={this.handleChange} showAll={this.showAll}recipes={recipes}/>
                 {this.state.showAll ?
                   <div style={{paddingTop: `10px`}}>
-                    <button type="button" class="btn btn-outline-primary" onClick={() => this.hideAll()} > Hide All </button>
+                    <button type="button" class="btn btn-dark" onClick={() => this.hideAll()} > Hide All </button>
                   </div>
                 :
                   <div style={{paddingTop: `10px`}}>
-                    <button type="button" class="btn btn-outline-primary" onClick={() => this.showAll()} > Show All </button>
+                    <button type="button" class="btn btn-dark" onClick={() => this.showAll()} > Show All </button>
                   </div>
                 }
               </div>
             }
             <DrinksContainer recipes={this.state.selectedDrinks}/>
             {this.state.anotherRound ?
-              <button type="button" class="btn btn-outline-primary" onClick={() => this.startAgain()}> Another Round! </button>
+              <button type="button" class="btn btn-dark" onClick={() => this.startAgain()}> Another Round! </button>
               :
               <div></div>
             }

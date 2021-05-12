@@ -9,7 +9,7 @@ function CardFront(props) {
             <div class="card-body" style={{paddingBottom: `10px`}}>
                 <h4 class="card-title">{recipe.name}</h4>
             </div>
-            <button type="button" class="btn btn-primary" onClick={() => props.handleClick()}>Show Recipe</button>
+            <button type="button" class="btn btn-dark" onClick={() => props.handleClick()}>Show Recipe</button>
         </div>
     )
 }

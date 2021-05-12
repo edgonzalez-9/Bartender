@@ -22,7 +22,7 @@ function CardBack(props) {
                         </ul>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary" onClick={() => props.handleClick()}>Hide Recipe</button>
+                <button type="button" class="btn btn-dark" onClick={() => props.handleClick()}>Hide Recipe</button>
             </div>
         </div>
     )
