@@ -5,6 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 import DrinksContainer from './Containers/DrinksContainer';
 import SearchBar from './Containers/SearchBar'
 import React from 'react';
+import TitleCard from './Components/TitleCard';
 
 class App extends React.Component{
   constructor(props){
@@ -16,7 +17,7 @@ class App extends React.Component{
       selectedDrinks: [],
       anotherRound: false,
       drinkSelected: false,
-      currentLiquor: '',
+      currentLiquor: null,
       showAll: false
     }
   }
@@ -63,7 +64,7 @@ class App extends React.Component{
     return(
       <div className="App">
         <header className="App-header">
-          <h1>Project Drinks Working Title</h1>
+          <TitleCard liquor={this.state.currentLiquor}/>
           {this.state.showTitle ? 
           <div class="container-fluid">
             <button type="button" class="btn btn-dark" onClick={() => this.showSearchBar()}> Click Here to Get Started </button>
