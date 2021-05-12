@@ -47,3 +47,6 @@ FLOWCHART OF USER EXPERIENCE AND APP FUNCTIONS
 
 Need to reasses scope of the project and figure out what to finsih to add to resume.
 Trying to fix the issues when commiting changes to the README.
+Still trying to see if the README will update. 
+
+README is now fully functional! Will take some time tomorrow to make more changes.
