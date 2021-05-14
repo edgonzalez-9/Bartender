@@ -15,38 +15,27 @@ Step 4 - Create a backend to store user recipes.
     - Backend will alow the addition of recipes through the frontend interface 
     -- Not too sure about this part anymore, will rethink the app. 
     - Changing more things to get a submit in for the day.
-
-
     
 Step 5 - Test adding recipes to the database. 
     - Use this to increase the ammount of recipes that are stored in the database.
+ 
 
+    FLOWCHART OF USER EXPERIENCE AND APP FUNCTIONS
 
-USER EXPERIENCE
+<!-- 1 - User loads page that has title and start options. DONE -->
 
-When first opened, the user will see the website title and 'Click Here to Start' button. There the user will see a series of drop down menu selctions that narrow down what drinks can be made with on hand inventory. Once the drinks available are shown the user will be able to click on a drink to see a detailed instruction sheet. This page will also have a button that allows user to start the process from the beginning without having to reset the page. At all times there will be a contact button at the bottom of the page that can be used to send an email with recipe suggestions. 
+<!-- 2 - User see the dropdown menu that allows them to select drink ingredients. 
+    - There is currently a dropdown menu with options but it doesn't do anything. It needs to be connected to a function that takes the input and selects ingredients based on that.  -->
 
-Go throught Krivik's suggestions on react add ons that we can use. Read documentation and understand where to implement them. 
+<!-- 3 - Once the user has selected an ingredient recipes will show up that contain the ingredients selected.  -->
 
-We now have implemented a dropdown search menu with options that I selected. Next we need to use the selected option to sort through the drinks based on what option is picked. this will require us to understand how to use the select component and how to get it to pass back up the selected option to the app. Then this will be used to reduce the drinks that are shown. 
+<!-- 4 - The user can click on a particular recipe to see ingredients and instructions. -->
 
-Will write a thorough flowchart to know what needs to be implemented tomorrow. 
-
-FLOWCHART OF USER EXPERIENCE AND APP FUNCTIONS
-
-1 - User loads page that has title and start options. DONE
-
-2 - User see the dropdown menu that allows them to select drink ingredients. 
-    - There is currently a dropdown menu with options but it doesn't do anything. It needs to be connected to a function that takes the input and selects ingredients based on that. 
-
-3 - Once the user has selected an ingredient recipes will show up that contain the ingredients selected. 
-
-4 - The user can click on a particular recipe to see ingredients and instructions. 
-
-5 - ???
 
 Need to reasses scope of the project and figure out what to finsih to add to resume.
 Trying to fix the issues when commiting changes to the README.
 Still trying to see if the README will update. 
 
 README is now fully functional! Will take some time tomorrow to make more changes.
+
+App will now go under revision. 
