@@ -39,3 +39,4 @@ Still trying to see if the README will update.
 README is now fully functional! Will take some time tomorrow to make more changes.
 
 App will now go under revision. 
+App is still under revision
