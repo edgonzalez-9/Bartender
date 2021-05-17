@@ -5,12 +5,12 @@ function myComponent(props) {
 
     
     const options = [
-        {label: 'Tequila'},
-        {label: 'Rum'},
-        {label: 'Gin'},
-        {label: 'Crown Royal'},
         {label: 'Bourbon'},
+        {label: 'Crown Royal'},
+        {label: 'Gin'},
         {label: 'Peach Schnapps'},
+        {label: 'Rum'},
+        {label: 'Tequila'},
         {label: 'Vodka'}
     ]
     
@@ -19,7 +19,7 @@ function myComponent(props) {
     // options = recipes.ingredients.map(ingredient => {{label: ingredient}})
 
     return(
-        <div>
+        <div style={{width: `80vw`, margin: `auto`}}>
             <h3> Select Your Liquor </h3>
             <Select
                 className="text-dark"

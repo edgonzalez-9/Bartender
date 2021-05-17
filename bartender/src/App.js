@@ -72,7 +72,7 @@ class App extends React.Component{
           : 
           <div class="container-fluid">
             {this.state.drinkSelected ?
-              <div>
+              <div style={{backgroundColor: `rgba(0,0,0, .5)`, padding: `15px`, width: `80vw`, margin: `auto`}}>
                 <h2>{this.state.currentLiquor}</h2>
               </div>
             :
