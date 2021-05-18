@@ -40,3 +40,4 @@ README is now fully functional! Will take some time tomorrow to make more change
 
 App will now go under revision. 
 App is still under revision
+It sucks being sick
