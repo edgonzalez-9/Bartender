@@ -98,6 +98,9 @@ class App extends React.Component{
           </div>
           }
         </header>
+        <body>
+          <button>Contact Us</button>
+        </body>
       </div>
     )
   }
